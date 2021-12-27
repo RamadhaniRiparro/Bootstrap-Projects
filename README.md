@@ -1,2 +1,2 @@
 # Bootstrap-Projects
-Bootstrap Projects made bt me
+Bootstrap Projects made by me
