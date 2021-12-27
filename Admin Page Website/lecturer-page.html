@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>Lecturer Page</title>
+	<style type="text/css">
+		.nav-link:hover {
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">WELCOME ADMIN | <b>HARVARD UNIVERSITY</b></a>
+	      <form class="d-flex ms-auto">
+	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-outline-success" type="submit">Search</button>
+	      </form>
+	      <div class="icon ms-3">
+	      	<h5>
+	      		<i class="fas fa-envelope me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Inbox Mail"></i>
+	      		<i class="fas fa-bell me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notification"></i>
+	      		<i class="fas fa-sign-out-alt me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign Out"></i>
+	      	</h5>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	<!-- Navbar end -->
+
+	<!-- Admin Page -->
+	<div class="row g-0">
+		<div class="col-md-2 bg-dark p-3">
+			<ul class="nav flex-column m-3">
+			  <li class="nav-item">
+			    <a class="nav-link text-white" aria-current="page" href="dashboard-page.html"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="student-page.html"><i class="fas fa-user-graduate me-2"></i>Student List</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="lecturer-page.html"><i class="fas fa-chalkboard-teacher me-2"></i>Lecturer List</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="employee-page.html"><i class="fas fa-user-edit me-2"></i>Employee List</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="schedule-page.html"><i class="fas fa-calendar-alt me-2"></i>Class Schedule</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="value-page.html"><i class="fas fa-marker me-2"></i>Student Value</a><hr class="bg-secondary">
+			  </li>
+			</ul>
+		</div>
+		<div class="col-md-10 p-5 pt-3 ">
+			<h3><i class="fas fa-chalkboard-teacher me-2"></i>Lecturer List</h3><hr>
+			<a href="" class="btn btn-primary mb-3"><i class="fas fa-plus-square me-2"></i>ADD LECTURER DATA</a>
+			<table class="table table-striped table-bordered text-center">
+			  <thead>
+			    <tr>
+			      <th scope="col">No</th>
+			      <th scope="col">Lecturer Name</th>
+			      <th scope="col">ID</th>
+			      <th scope="col">Birth</th>
+			      <th scope="col">Address</th>
+			      <th colspan="3" scope="col">Action</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Smith Yohannes, M.Arch</td>
+			      <td>0988</td>
+			      <td>Japan, 7 May 1990</td>
+			      <td>Tokyo City, Japan</td>
+			      <td><a href="" class="btn btn-primary">Detail</a></td>
+			      <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"></i></td>
+			      <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"></i></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td>Michael Haki, M.Th.</td>
+			      <td>0985</td>
+			      <td>Japan, 12 July 1882</td>
+			      <td>Hokkaido, Japan</td>
+			      <td><a href="" class="btn btn-primary">Detail</a></td>
+			      <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"></i></td>
+			      <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"></i></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td>Yorozuya, M.Sc.</td>
+			      <td>0891</td>
+			      <td>Japan, 14 November 1986</td>
+			      <td>Kyoto, Japan</td>
+			      <td><a href="" class="btn btn-primary">Detail</a></td>
+			      <td><i class="fas fa-edit bg-success p-2 text-white rounded" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Edit"></i></td>
+			      <td><i class="fas fa-trash-alt bg-danger p-2 text-white rounded" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Delete"></i></td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+	<!-- Admin Page End -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/d060e0b691.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		  return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+	</script>
+</body>
+</html>
+
