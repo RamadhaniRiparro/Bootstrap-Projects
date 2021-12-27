@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title>Admin Page</title>
+	<style type="text/css">
+		.nav-link:hover {
+			background-color: grey;
+		}
+		.card-body-icon {
+			position: absolute;
+			z-index: 0;
+			top: 25px;
+			right: 4px;
+			opacity: 0.5;
+			font-size: 90px;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">WELCOME ADMIN | <b>HARVARD UNIVERSITY</b></a>
+	      <form class="d-flex ms-auto">
+	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-outline-success" type="submit">Search</button>
+	      </form>
+	      <div class="icon ms-3">
+	      	<h5>
+	      		<i class="fas fa-envelope me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Inbox Mail"></i>
+	      		<i class="fas fa-bell me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Notification"></i>
+	      		<i class="fas fa-sign-out-alt me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Sign Out"></i>
+	      	</h5>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	<!-- Navbar end -->
+
+	<!-- Admin Page -->
+	<div class="row g-0">
+		<div class="col-md-2 bg-dark p-3">
+			<ul class="nav flex-column m-3">
+			  <li class="nav-item">
+			    <a class="nav-link text-white" aria-current="page" href="#"><i class="fas fa-tachometer-alt me-2"></i>Dashboard</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="#"><i class="fas fa-user-graduate me-2"></i>Student List</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="#"><i class="fas fa-chalkboard-teacher me-2"></i>Lecturer List</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="#"><i class="fas fa-user-edit me-2"></i>Employee List</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="#"><i class="fas fa-calendar-alt me-2"></i>Class Schedule</a><hr class="bg-secondary">
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link text-white" href="#"><i class="fas fa-marker me-2"></i>Student Value</a><hr class="bg-secondary">
+			  </li>
+			</ul>
+		</div>
+		<div class="col-md-10 p-5 pt-3 ">
+			<h3><i class="fas fa-tachometer-alt me-2"></i>Dashboard</h3><hr>
+			<div class="row text-white">
+				<div class="col-md-4 mb-2">
+					<div class="card bg-info ms-5 shadow" style="width: 18rem;">
+					  <div class="card-body">
+					  	<div class="card-body-icon">
+					  		<i class="fas fa-user-graduate me-2"></i>
+					  	</div>
+					    <h5 class="card-title">STUDENT TOTAL</h5>
+					    <div class="display-4 fw-bold">1200</div>
+					    <a href="" class="text-decoration-none"><p class="card-text text-white">See more<i class="fas fa-angle-double-right ms-2"></i></p></a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-2">
+					<div class="card bg-success ms-5 shadow" style="width: 18rem;">
+					  <div class="card-body">
+					  	<div class="card-body-icon">
+					  		<i class="fas fa-chalkboard-teacher me-2"></i>
+					  	</div>
+					    <h5 class="card-title">LECTURER TOTAL</h5>
+					    <div class="display-4 fw-bold">60</div>
+					    <a href="" class="text-decoration-none"><p class="card-text text-white">See more<i class="fas fa-angle-double-right ms-2"></i></p></a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-2">
+					<div class="card bg-danger ms-5 shadow" style="width: 18rem;">
+					  <div class="card-body">
+					  	<div class="card-body-icon">
+					  		<i class="fas fa-user-edit me-2"></i>
+					  	</div>
+					    <h5 class="card-title">EMPLOYEE TOTAL</h5>
+					    <div class="display-4 fw-bold">200</div>
+					    <a href="" class="text-decoration-none"><p class="card-text text-white">See more<i class="fas fa-angle-double-right ms-2"></i></p></a>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col-md-4 mb-2">
+					<div class="card ms-5 text-white text-center shadow" style="width: 18rem;">
+					  <div class="card-header bg-danger display-4 p-4">
+					    <i class="fab fa-instagram"></i>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title text-danger">INSTAGRAM</h5>
+					    <a href="#" class="btn btn-danger">FOLLOW</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-2">
+					<div class="card ms-5 text-white text-center shadow" style="width: 18rem;">
+					  <div class="card-header bg-primary display-4 p-4">
+					    <i class="fab fa-facebook"></i>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title text-primary">FACEBOOK</h5>
+					    <a href="#" class="btn btn-primary">LIKE</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-2">
+					<div class="card ms-5 text-white text-center shadow" style="width: 18rem;">
+					  <div class="card-header bg-info display-4 p-4">
+					    <i class="fab fa-twitter"></i>
+					  </div>
+					  <div class="card-body">
+					    <h5 class="card-title text-info">TWITTER</h5>
+					    <a href="#" class="btn btn-info text-white">FOLLOW</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Admin Page End -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/d060e0b691.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		  return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+	</script>
+</body>
+</html>
+
